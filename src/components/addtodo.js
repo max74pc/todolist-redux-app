@@ -1,9 +1,9 @@
-import React, {Fragment} from "react";
+import React from "react";
 
 export default function addtodoComponent({addTodo}) {
     let todoInput;
     return (
-        <Fragment>
+        <div className='addtodo'>
             <input ref={node => {
                 todoInput = node
             }}/>
@@ -15,6 +15,6 @@ export default function addtodoComponent({addTodo}) {
             }
             >Aggiungi
             </button>
-        </Fragment>
+        </div>
     )
 }

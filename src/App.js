@@ -5,19 +5,19 @@ import AddNewTodo from './containers/addnew'
 import MyTodoList from './containers/mytodolist'
 
 class App extends Component {
-    constructor() {
-        super();
-    }
 
     render() {
         return (
             <div className="App">
                 <Header/>
-                <AddNewTodo/>
-                <MyTodoList/>
+                <div className='container'>
+                    <AddNewTodo/>
+                    <MyTodoList/>
+                </div>
             </div>
         );
     }
+
 }
 
 export default App;
