@@ -2,10 +2,12 @@ export default function storeReducer(state = {}, action) {
     switch (action.type) {
         case 'ADD_TODO' :
             return {
+
                 todos: [
-                    action.todo,
+                    {id: 0, todo: action.todo, completed: false},
                     ...state.todos
                 ]
+
             }
         case 'REMOVE_TODO' :
             return {
@@ -18,4 +20,8 @@ export default function storeReducer(state = {}, action) {
             return {...state};
 
     }
+
 }
+
+  
+ 
